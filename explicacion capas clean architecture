@@ -1,0 +1,12 @@
+capa de entities: carpeta entities
+capa de uses cases: interactors e interfaces
+capa de controllers: carpeta controllers y routes
+
+1.El controller manda informacion a use case
+2.El interactor de caso de uso toma esa informacion y la procesa segun la logica de negocio 
+3.El interactor de caso de uso da una salida de informacion.
+4.El presenter toma la informacion que sale del interactor y la deriva a la UI.
+
+
+Indext llama al router
+router instancia al controlador y este tiene inyectado el interactor. el interactor tiene inyectado el repository 
